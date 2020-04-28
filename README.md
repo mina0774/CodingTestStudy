@@ -23,6 +23,39 @@ for (int i=0; i<21; i++)
   fill(b[i],b[i]+21,0);
   
  <b>연결리스트</b>
+ 
  k번째 원소를 확인/변경하기 위해 O(k)가 필요함
- 임의의 위치에 원소를 추가/제거는 O(1)
+ 임의의 위치에 원소를 추가/제거는 O(1) (추가, 제거하고 싶은 위치의 주소를 알고 있을 경우에만 해당)
  원소들이 메모리 상에 연속해있지 않아 Cache hit rate가 낮지만 할당이 다소 쉬움
+ 
+ 코딩테스트에서는 C++에 있는 STL list를 활용하면 됨 (STL list는 Doubley Linked List 구조)
+ 
+ 만약, STL list를 사용을 못한다면 -> 야매 연결리스트
+ const int MX=1000005;
+ int dat[MX], pre[MX], nxt[MX]l
+ int unused =1;
+ fill(pre, pre+MX, -1);
+ fill(nxt, nxt+MX, -1);
+ // dat[i]는 i번지의 원소의 값
+ // pre[i]는 i번지 원소 이전의 인덱스
+ // nxt[i]는 i번지 원소 다음의 인덱스
+ // pre, nxt의 값이 -1이면 해당 원소의 이전/다음 원소가 존재하지 않는다는 의미, unused는 현재 사용되지 않는 인덱스
+ // 0번지는 값이 들어가지 않고 시작점을 나타내기 위한 dummy node
+ 
+ void insert(int addr, int num){
+    dat[unused]=num;
+    pre[unused]=addr;
+    nxt[unused]=nxt[addr];
+    if(nxt[addr]!=-1) pre[nxt[addr]]=unused; // 요걸 빠뜨림
+    nxt[addr]=unused;
+    unused++;
+ }
+ 
+ void erase(int addr){
+    nxt[pre[addr]]=nxt[addr];
+    if(nxt[addr] != -1) pre[nxt[addr]]=pre[addr]; // 더미노드로 인해 pre[addr]은 -1이 아님이 보장되지만, nxt[addr]은 -1일수도 있음
+ }
+ 
+STL list
+백준 1406번 에디터
+
