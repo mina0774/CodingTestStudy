@@ -65,8 +65,8 @@ STL list
 
 <b>큐</b>
 
-head는 가장 앞에 있는 원소의 인덱스 \n
-tail은 가장 뒤에 있는 원소의 인덱스 +1 \n 
-dat[head]부터 dat[tail-1]번지 -> 큐의 원소들이 들어있는 자리 \n
-큐의 크기: tail-head \n
+head는 가장 앞에 있는 원소의 인덱스 <br>
+tail은 가장 뒤에 있는 원소의 인덱스 +1 <br>
+dat[head]부터 dat[tail-1]번지 -> 큐의 원소들이 들어있는 자리 <br>
+큐의 크기: tail-head <br>
 백준 10845번 큐
