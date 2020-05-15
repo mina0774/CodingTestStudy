@@ -85,4 +85,6 @@ dat[head]부터 dat[tail-1]번지 -> 큐의 원소들이 들어있는 자리 <br
 <강의 내용 보충되는대로 추가하기>
 
 # 문제풀이
-Programmers Level1 1) 크레인 인형뽑기
+Programmers Level1 
+1) 크레인 인형뽑기 - 스택 이용
+2) 완주하지 못한 선수 - 해쉬맵 이용
