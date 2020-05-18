@@ -124,3 +124,8 @@ Programmers Level1
 1) 크레인 인형뽑기 - 스택 이용
 2) 완주하지 못한 선수 - 해쉬맵 이용
 3) 모의고사 - 모두 다 탐색하는 방식으로 해결
+4) K번째수 <br>
+- Arrays.copyOfRange(src,dst); <br>
+배열에 특정 위치에 시작점, 끝점을 지정해서 잘라줌 / copyOfRange(배열, 시작인덱스, 종료인덱스) 메소드는 시작인덱스는 포함, 종료인덱스는 포함 X <br>
+- Arrays.sort(array); <br>
+배열을 순서대로 정렬해줌 <br>
