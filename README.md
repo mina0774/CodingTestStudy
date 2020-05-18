@@ -129,3 +129,4 @@ Programmers Level1
 배열에 특정 위치에 시작점, 끝점을 지정해서 잘라줌 / copyOfRange(배열, 시작인덱스, 종료인덱스) 메소드는 시작인덱스는 포함, 종료인덱스는 포함 X <br>
 - Arrays.sort(array); <br>
 배열을 순서대로 정렬해줌 <br>
+5) 가운데 글자 가져오기 - 문자열 String s; s.substring(시작인덱스, 종료인덱스); 시작인덱스 포함, 종료인덱스 포함 X
