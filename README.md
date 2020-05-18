@@ -82,7 +82,42 @@ dat[head]부터 dat[tail-1]번지 -> 큐의 원소들이 들어있는 자리 <br
 백준 10799번 쇠막대기<br>	
 스택을 이용하는데, 여는 괄호가 나오면 스택에 push하고, 닫는 괄호가 나오면 스택에서 pop 해줌. 닫는 괄호가 나왔을 때, 바로 전 괄호가 여는 괄호인지 확인한 후 레이저인지, 막대기의 끝인지 판단함. 레이저일 때는 스택에 들어있는 사이즈만큼 결과값을 더해줌. 막대기 끝일 때는 마지막 조각이 남으니까 결과값을 1만 더해줌 <br>
 
-<강의 내용 보충되는대로 추가하기>
+<b> BFS </b>
+
+BFS: 다차원 배열에서 각 칸을 방문할 때 너비를 우선으로 방문하는 알고리즘 <br>
+
+#include <bits/stdc++.h> <br>
+using namespace std; <br>
+#define X first <br>
+#define Y seconde <br>
+int board[502][502]={...}; <br>
+bool vis[502][502]; <br>
+int n=7,m=10; <br
+int dx[4]={1,0,-1,0}; <br>
+int dy[4]={0,1,0,-1}; <br>
+int main(void){ <br>
+  ios::sync_with_stdio(0); <br>
+  cin.tie(0); <br>
+  queue<pair<int,int>> Q; <br>
+  vis[0][0]=1; <br>
+  Q.push({0,0,}); <br>
+  while(!Q.empty()){ <br> 
+    pair<int,int> cur=Q.front(); Q.pop(); <br>
+    cout<<'('<<cur.X<<","<<cur.Y<<") -> "; <br>
+    for(int dir=0; dir<4; dir++){ <br>
+      int nx=cur.X+dx[dir]; <br>
+      int ny=cur.Y+dy[dir]; <br>
+      if(nx < 0 || nx >= n || ny < 0 || ny >= m) continue; <br> 
+      if(vis[nx][ny] || board[nx][ny] != 1) continue; <br>
+      vis[nx][ny]=1; <br>
+      Q.push({nx,ny}); <br>
+    } <br>
+  } <br>
+} <br>
+
+백준 1926번 그림
+
+<강의 내용 보충되는대로 추가하기> 12페이지부터 진행하기
 
 # 문제풀이
 Programmers Level1 
