@@ -133,3 +133,4 @@ Programmers Level1
 - Arrays.sort(array); <br>
 배열을 순서대로 정렬해줌 <br>
 5) 가운데 글자 가져오기 - 문자열 String s; s.substring(시작인덱스, 종료인덱스); 시작인덱스 포함, 종료인덱스 포함 X
+6) 2016년 - java 배열 초기화시 int[] i_array = {1,2,3,4,5}; / String[] s_array = {"a","b","c","d"}; / int[] i_array = new int[8]; 
