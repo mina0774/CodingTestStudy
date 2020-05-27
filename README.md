@@ -120,7 +120,7 @@ int main(void){ <br>
 백준 7576번 토마토 - 2차원 <br>
 백준 7569번 토마토 - 3차원 <br>
 
-17페이지부터
+18페이지부터
 
 # 문제풀이
 Programmers Level1 
