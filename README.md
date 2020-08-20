@@ -134,7 +134,7 @@ Programmers Level1
 - Arrays.sort(array); <br>
 배열을 순서대로 정렬해줌 <br>
 5) 가운데 글자 가져오기 - 문자열 String s; s.substring(시작인덱스, 종료인덱스); 시작인덱스 포함, 종료인덱스 포함 X
-6) 2016년 - java 배열 초기화시 int[] i_array = {1,2,3,4,5}; / String[] s_array = {"a","b","c","d"}; / int[] i_array = new int[8]; 
+6) 2016년 (8월 17일 - 8월 23일 완료)- java 배열 초기화시 int[] i_array = {1,2,3,4,5}; / String[] s_array = {"a","b","c","d"}; / int[] i_array = new int[8]; 
 7) 문자열 내림차순으로 배치하기 (7월 27일 - 8월 2일 완료) <br>
 - 문자열을 배열로 바꿔주기 <br>
 - Arrays.sort(array,Collections.reverseOrder()); //array를 내림차순으로 배치하기 <br>
