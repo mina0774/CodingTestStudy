@@ -138,4 +138,5 @@ Programmers Level1
 7) 문자열 내림차순으로 배치하기 (7월 27일 - 8월 2일 완료) <br>
 - 문자열을 배열로 바꿔주기 <br>
 - Arrays.sort(array,Collections.reverseOrder()); //array를 내림차순으로 배치하기 <br>
-8) 체육복 - 탐욕법 (Greedy) (8월 10일- 8월 16일 완료)
+8) 체육복 - 탐욕법 (Greedy) (8월 10일- 8월 16일 완료) <br>
+9) 같은 숫자는 싫어 (8월 24일 - 8월 30일 완료) <br>
