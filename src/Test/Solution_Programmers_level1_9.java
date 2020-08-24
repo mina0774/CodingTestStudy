@@ -1,5 +1,6 @@
 package Test;
 import java.util.*;
+//같은 숫자는 싫어
 public class Solution_Programmers_level1_9 {
 	 public int[] solution(int []arr) {
 	        
