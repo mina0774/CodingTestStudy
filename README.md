@@ -141,3 +141,4 @@ Programmers Level1
 - Arrays.sort(array,Collections.reverseOrder()); //array를 내림차순으로 배치하기 <br>
 8) 체육복 - 탐욕법 (Greedy) (8월 10일- 8월 16일 완료) <br>
 9) 같은 숫자는 싫어 (8월 24일 - 8월 30일 완료) <br>
+10) 나누어 떨어지는 숫자 배열 (8월 24일 - 8월 30일 완료) <br>
