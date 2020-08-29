@@ -9,6 +9,8 @@ double (실수) / long long (정수) - 범위를 벗어나지 않게 하기 위�
 C++ String을 처리할 때는 getline을 쓰는 게 좋음 -> cin은 공백문자를 구분하지 못하므로  <br>	
 sync_with_stdio를 쓴 이후로는 무조건 cin/cout만 쓰고 printf/scanf를 쓰면 안됨 - ios::sync_with_stdio(0), cin.tie(0)  <br>	
 
+c++에서 입출력 많이 있을 때 ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL); <br>
+
 <b>배열</b>	
 
 배열은 메모리 상에 원소를 연속하게 배치한 자료구조이라서 k번째 원소의 위치를 바로 계산할 수 있음. k번째 원소를 O(1)에 확인하거나 변경 가능  <br>	
