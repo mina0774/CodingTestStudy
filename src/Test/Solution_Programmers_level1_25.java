@@ -1,10 +1,11 @@
 package Test;
 import java.util.*;
 
+
 public class Solution_Programmers_level1_25 {
     public long solution(long n) {
         long answer = 0;
-        
+       
         // 문자 배열로 만들기
         String str=Long.toString(n);
         String str1[]=str.split("");
