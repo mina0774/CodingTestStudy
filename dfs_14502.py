@@ -4,6 +4,9 @@ data=[]
 # 벽을 설치한 뒤의 맵 리스트
 temp=[[0]*m for _ in range(n)]
 
+for _ in range(n):
+    data.append(list(map(int,input().split())))
+
 # 4가지 이동방향에 대한 리스트
 dx=[-1,0,1,0]
 dy=[0,1,0,-1]
@@ -43,7 +46,7 @@ def dfs(count):
 
         # 각 바이러스의 위치에서 전파 진행
         for i in range(n):
-            for i in range(m):
+            for j in range(m):
                 if temp[i][j]==2:
                     virus(i,j)
 
@@ -60,3 +63,6 @@ def dfs(count):
                 dfs(count)
                 data[i][j]=0
                 count-=1
+
+dfs(0)
+print(result)
