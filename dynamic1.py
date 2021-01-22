@@ -39,6 +39,9 @@ def topdown():
         if x==1:
             return 0
 
+        if d[x]!=0:
+            return d[x]
+
         d[x]=make1(x-1)+1
 
         if x%2==0:
