@@ -38,7 +38,7 @@ def solution(p):
     for i in range(2,len(p)+1,2):
         if isBalanced(p[0:i]):
             u=p[0:i]
-            v=p[i:len(p)]
+            v=p[i:len(p)+1]
             break
 
     # u가 올바른 괄호 문자열이라면
@@ -53,4 +53,4 @@ def solution(p):
 
     return answer
 
-print(solution("()))((()"))
+print(solution(")("))
