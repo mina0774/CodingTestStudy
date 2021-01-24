@@ -55,4 +55,5 @@ def topdown():
 
     print(make1(n))
 
+bottomup()
 topdown()
