@@ -32,7 +32,7 @@ def dfs(i,now):
             mul += 1
         if div > 0:
             div -= 1
-            dfs(i + 1, now / data[i])
+            dfs(i + 1, int(now / data[i]))
             div += 1
 
 dfs(1,data[0])
