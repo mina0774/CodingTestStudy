@@ -1,4 +1,4 @@
-[ CodingTestStudy ] 2020.05~
+[ CodingTestStudy ] 
 ============================
 
 __python 코테 준비__
