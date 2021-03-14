@@ -27,6 +27,7 @@ def solution(begin,target,words):
         now,step=q.popleft()
 
         for word in words:
+            # 딕셔너리 + not in 사용하면 해당 key값이 있는지 확인해주는 것
             if IsDiffOneChar(now,word,len_word) and word not in visited:
                 visited[word]=True
                 q.append((word,step+1))
