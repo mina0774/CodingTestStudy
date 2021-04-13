@@ -1,4 +1,4 @@
-# 탈주범 검거 - dfs
+# 탈주범 검거 - bfs
 from collections import deque
 
 T = int(input())
