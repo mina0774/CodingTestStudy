@@ -29,7 +29,6 @@ r은 행, c는 열이고, (R, C)는 아래 그림에서 가장 오른쪽 아래�
 <출력>
 낚시왕이 잡은 상어 크기의 합을 출력한다.
 '''
-
 def sharkMove():
     temp=[[0]*C for _ in range(R)]
     for i in range(R):
@@ -48,30 +47,25 @@ def sharkMove():
                         elif d==1: d=0
                         elif d==2: d=3
                         else: d=2
-                if temp[x][y]==0:
+                if temp[x][y]==0 or temp[x][y][2]<z:
                     temp[x][y]=[a[i][j][0],d,z]
-                else:
-                    if temp[x][y][2]<z:
-                        temp[x][y]=[a[i][j],d,z]
     return temp
-R,C,M=map(int,input().split())
-
-a=[[0]*C for _ in range(R)]
-
 dx=[-1,1,0,0]
 dy=[0,0,1,-1]
 
+R,C,M=map(int,input().split())
+a=[[0]*C for _ in range(R)]
 for _ in range(M):
+    # s 속력, d 이동방향, z 크기
     r,c,s,d,z=map(int,input().split())
     a[r-1][c-1]=[s,d-1,z]
+
 result=0
-for i in range(C):
-    for j in range(R):
-        if a[j][i]!=0:
-            result+=a[j][i][2]
-            a[j][i]=0
+for j in range(C):
+    for i in range(R):
+        if a[i][j] !=0:
+            result+=a[i][j][2]
+            a[i][j]=0
             break
     a=sharkMove()
-
 print(result)
-
